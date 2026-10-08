@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "TargetLocked",
+      "hasCanvas": false,
+      "bodyTextLen": 1550,
+      "bodyTextHash": "8d88bd5f0e9dcb77cf0add5203f9d4b9467bb1e6e7e53dd5399915058ba43a2e",
+      "bodyTextPrefix": "TargetLocked Jobs Admit cards Results Answer keys SSC CGL Bank C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "TargetLocked",
+      "hasCanvas": false,
+      "bodyTextLen": 1499,
+      "bodyTextHash": "fd1d7d412c6720a957cc0f31945f344bc25facf76b597acb6eb888b711fb8b4f",
+      "bodyTextPrefix": "TargetLocked Menu EXAM LOCK, NOT A NOTICE DUMP Know the paper be",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

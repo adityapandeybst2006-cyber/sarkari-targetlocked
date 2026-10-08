@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SarkariMVP – Latest Jobs, Admit Cards, Results & Answer Keys</title>
+  <meta name="description" content="MVP portal for latest government jobs, admit cards, results and answer keys. Focused on SSC CGL and Bank Clerk (IBPS/SBI).">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            accent: '#f59e0b',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="bg-primary text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold tracking-tight">Sarkari<span class="text-accent">MVP</span></a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="pages/jobs.html" class="hover:text-accent transition">Jobs</a>
+        <a href="pages/admit-cards.html" class="hover:text-accent transition">Admit Cards</a>
+        <a href="pages/results.html" class="hover:text-accent transition">Results</a>
+        <a href="pages/answer-keys.html" class="hover:text-accent transition">Answer Keys</a>
+        <a href="pages/ssc-cgl.html" class="hover:text-accent transition">SSC CGL</a>
+        <a href="pages/bank-clerk.html" class="hover:text-accent transition">Bank Clerk</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-primary border-t border-blue-700 px-4 py-3 space-y-2 text-sm">
+      <a href="pages/jobs.html" class="block py-1">Jobs</a>
+      <a href="pages/admit-cards.html" class="block py-1">Admit Cards</a>
+      <a href="pages/results.html" class="block py-1">Results</a>
+      <a href="pages/answer-keys.html" class="block py-1">Answer Keys</a>
+      <a href="pages/ssc-cgl.html" class="block py-1">SSC CGL</a>
+      <a href="pages/bank-clerk.html" class="block py-1">Bank Clerk</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary to-blue-800 text-white py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">Latest Sarkari Jobs & Exam Updates</h1>
+      <p class="text-blue-100 max-w-2xl mx-auto mb-6">MVP focused on <strong>Jobs</strong>, <strong>Admit Cards</strong>, <strong>Results</strong> & <strong>Answer Keys</strong>. Currently covering <strong>SSC CGL</strong> and <strong>Bank Clerk (IBPS / SBI)</strong>.</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="pages/ssc-cgl.html" class="bg-accent text-slate-900 font-semibold px-5 py-2.5 rounded-lg hover:bg-amber-400 transition">SSC CGL 2026</a>
+        <a href="pages/bank-clerk.html" class="bg-white text-primary font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-50 transition">Bank Clerk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="max-w-6xl mx-auto px-4 -mt-6 mb-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <div class="text-2xl font-bold text-primary">10,731</div>
+        <div class="text-xs text-slate-500">SSC CGL Vacancies</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <div class="text-2xl font-bold text-primary">11,663</div>
+        <div class="text-xs text-slate-500">IBPS Clerk Vacancies</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <div class="text-2xl font-bold text-green-600">Live</div>
+        <div class="text-xs text-slate-500">SSC CGL Tier-1 Ongoing</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <div class="text-2xl font-bold text-amber-600">10-11 Oct</div>
+        <div class="text-xs text-slate-500">IBPS Clerk Prelims</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates Grid -->
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Latest Jobs -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <span class="w-2 h-6 bg-primary rounded"></span> Latest Jobs
+          </h2>
+          <a href="pages/jobs.html" class="text-sm text-primary font-medium hover:underline">View all →</a>
+        </div>
+        <div class="space-y-3">
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">SSC</span>
+                <h3 class="font-semibold mt-1">SSC CGL 2026 – 10,731 Posts</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Tier-1 ongoing • Application closed</p>
+              </div>
+              <span class="text-xs text-slate-400 whitespace-nowrap">Active</span>
+            </div>
+            <a href="pages/ssc-cgl.html" class="inline-block mt-3 text-sm text-primary font-medium">Details →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded">Banking</span>
+                <h3 class="font-semibold mt-1">IBPS Clerk CRP CSA-XVI – 11,663 Posts</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Prelims 10-11 Oct 2026</p>
+              </div>
+              <span class="text-xs text-slate-400 whitespace-nowrap">Active</span>
+            </div>
+            <a href="pages/bank-clerk.html" class="inline-block mt-3 text-sm text-primary font-medium">Details →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-green-600 bg-green-50 px-2 py-0.5 rounded">Banking</span>
+                <h3 class="font-semibold mt-1">SBI Clerk / Junior Associate</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Regular & Special recruitment drives</p>
+              </div>
+              <span class="text-xs text-slate-400 whitespace-nowrap">Check</span>
+            </div>
+            <a href="pages/bank-clerk.html" class="inline-block mt-3 text-sm text-primary font-medium">Details →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Admit Cards -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <span class="w-2 h-6 bg-amber-500 rounded"></span> Admit Cards
+          </h2>
+          <a href="pages/admit-cards.html" class="text-sm text-primary font-medium hover:underline">View all →</a>
+        </div>
+        <div class="space-y-3">
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">OUT</span>
+                <h3 class="font-semibold mt-1">SSC CGL Tier-1 Admit Card 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Released in phases • ssc.gov.in</p>
+              </div>
+              <span class="text-xs text-green-600 font-medium">Active</span>
+            </div>
+            <a href="pages/ssc-cgl.html#admit" class="inline-block mt-3 text-sm text-primary font-medium">Download guide →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">OUT</span>
+                <h3 class="font-semibold mt-1">IBPS Clerk Prelims Admit Card 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Released 01 Oct • Exam 10-11 Oct</p>
+              </div>
+              <span class="text-xs text-green-600 font-medium">Active</span>
+            </div>
+            <a href="pages/bank-clerk.html#admit" class="inline-block mt-3 text-sm text-primary font-medium">Download guide →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Check</span>
+                <h3 class="font-semibold mt-1">SBI Clerk Admit Card</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Check sbi.co.in / careers section</p>
+              </div>
+              <span class="text-xs text-slate-400">Varies</span>
+            </div>
+            <a href="pages/bank-clerk.html" class="inline-block mt-3 text-sm text-primary font-medium">Details →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <span class="w-2 h-6 bg-green-600 rounded"></span> Results
+          </h2>
+          <a href="pages/results.html" class="text-sm text-primary font-medium hover:underline">View all →</a>
+        </div>
+        <div class="space-y-3">
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Pending</span>
+                <h3 class="font-semibold mt-1">SSC CGL Tier-1 Result 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Expected after answer key & evaluation</p>
+              </div>
+              <span class="text-xs text-slate-400">Soon</span>
+            </div>
+            <a href="pages/ssc-cgl.html#result" class="inline-block mt-3 text-sm text-primary font-medium">Track →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Pending</span>
+                <h3 class="font-semibold mt-1">IBPS Clerk Prelims Result 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Expected mid-November 2026</p>
+              </div>
+              <span class="text-xs text-slate-400">Soon</span>
+            </div>
+            <a href="pages/bank-clerk.html#result" class="inline-block mt-3 text-sm text-primary font-medium">Track →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded">Recent</span>
+                <h3 class="font-semibold mt-1">SSC CHSL Final Result 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Declared 07 Oct 2026</p>
+              </div>
+              <span class="text-xs text-slate-400">07 Oct</span>
+            </div>
+            <a href="pages/results.html" class="inline-block mt-3 text-sm text-primary font-medium">View →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Answer Keys -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <span class="w-2 h-6 bg-purple-600 rounded"></span> Answer Keys
+          </h2>
+          <a href="pages/answer-keys.html" class="text-sm text-primary font-medium hover:underline">View all →</a>
+        </div>
+        <div class="space-y-3">
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Pending</span>
+                <h3 class="font-semibold mt-1">SSC CGL Tier-1 Answer Key 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Expected after exam window closes (Nov)</p>
+              </div>
+              <span class="text-xs text-slate-400">Soon</span>
+            </div>
+            <a href="pages/ssc-cgl.html#answer" class="inline-block mt-3 text-sm text-primary font-medium">Track →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Pending</span>
+                <h3 class="font-semibold mt-1">IBPS Clerk Prelims Answer Key</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Usually released few days after exam</p>
+              </div>
+              <span class="text-xs text-slate-400">Soon</span>
+            </div>
+            <a href="pages/bank-clerk.html" class="inline-block mt-3 text-sm text-primary font-medium">Track →</a>
+          </article>
+          <article class="bg-white rounded-xl border border-slate-200 p-4 card-hover transition">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <span class="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded">Recent</span>
+                <h3 class="font-semibold mt-1">SSC Stenographer Answer Key 2026</h3>
+                <p class="text-sm text-slate-500 mt-0.5">Released • Raise objections if needed</p>
+              </div>
+              <span class="text-xs text-slate-400">Sep</span>
+            </div>
+            <a href="pages/answer-keys.html" class="inline-block mt-3 text-sm text-primary font-medium">View →</a>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Exam Pages CTA -->
+    <section class="mt-12 grid md:grid-cols-2 gap-6">
+      <a href="pages/ssc-cgl.html" class="block bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-1">SSC CGL 2026</h3>
+        <p class="text-blue-100 text-sm mb-3">10,731 vacancies • Tier-1 ongoing (30 Sep – 30 Oct) • Admit cards live</p>
+        <span class="text-sm font-medium">Full page →</span>
+      </a>
+      <a href="pages/bank-clerk.html" class="block bg-gradient-to-r from-emerald-600 to-emerald-800 text-white rounded-2xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-1">Bank Clerk (IBPS + SBI)</h3>
+        <p class="text-emerald-100 text-sm mb-3">IBPS Clerk Prelims 10-11 Oct • Admit cards out • SBI updates</p>
+        <span class="text-sm font-medium">Full page →</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+      <p class="font-semibold text-white mb-1">SarkariMVP</p>
+      <p class="mb-3">Day 1-2 MVP • Only Jobs, Admit Cards, Results, Answer Keys + SSC CGL & Bank Clerk</p>
+      <p class="text-xs text-slate-500">Data compiled from official sources (ssc.gov.in, ibps.in, sbi.co.in) and public reports. Always verify on official websites. Not affiliated with any government body.</p>
+      <p class="mt-4 text-xs">© 2026 SarkariMVP – Built for speed & clarity</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

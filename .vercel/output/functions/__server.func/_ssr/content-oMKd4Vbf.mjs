@@ -1,0 +1,132 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/content-oMKd4Vbf.js
+var updates = [
+	{
+		id: "cgl-job",
+		kind: "job",
+		exam: "ssc-cgl",
+		title: "SSC CGL 2026 — 10,731 posts",
+		date: "2026-05-21",
+		status: "Applications closed",
+		summary: "Group B and C posts. Tier-1 window is 30 Sep–30 Oct 2026."
+	},
+	{
+		id: "ibps-job",
+		kind: "job",
+		exam: "bank-clerk",
+		title: "IBPS Clerk CRP CSA-XVI — ~11,663 posts",
+		date: "2026-08-01",
+		status: "Applications closed",
+		summary: "Customer Service Associate. Prelims 10–11 Oct 2026, mains 27 Dec 2026."
+	},
+	{
+		id: "sbi-job",
+		kind: "job",
+		exam: "bank-clerk",
+		title: "SBI Junior Associate (Clerk)",
+		date: "2026-08-11",
+		status: "Check careers",
+		summary: "Regular and special drives. Confirm the live notice on sbi.co.in/careers."
+	},
+	{
+		id: "cgl-admit",
+		kind: "admit",
+		exam: "ssc-cgl",
+		title: "SSC CGL Tier-1 admit card",
+		date: "2026-09-27",
+		status: "Live",
+		summary: "Released in phases from 27 Sep, usually 2–3 days before your shift. Login at ssc.gov.in."
+	},
+	{
+		id: "ibps-admit",
+		kind: "admit",
+		exam: "bank-clerk",
+		title: "IBPS Clerk prelims call letter",
+		date: "2026-10-01",
+		status: "Live",
+		summary: "Download opened 1 Oct. Exam 10 and 11 Oct. Login at ibps.in."
+	},
+	{
+		id: "sbi-admit",
+		kind: "admit",
+		exam: "bank-clerk",
+		title: "SBI Clerk call letter",
+		date: "2026-09-21",
+		status: "Check portal",
+		summary: "Some 2026 drives released call letters in September. Use the SBI careers login."
+	},
+	{
+		id: "cgl-result",
+		kind: "result",
+		exam: "ssc-cgl",
+		title: "SSC CGL Tier-1 result 2026",
+		date: "2026-11-01",
+		status: "Pending",
+		summary: "Expected after the provisional key, objections, and final key."
+	},
+	{
+		id: "ibps-result",
+		kind: "result",
+		exam: "bank-clerk",
+		title: "IBPS Clerk prelims result",
+		date: "2026-11-15",
+		status: "Pending",
+		summary: "Typical gap is 3–4 weeks after the last prelims shift. Mains is 27 Dec."
+	},
+	{
+		id: "chsl-result",
+		kind: "result",
+		exam: "ssc-cgl",
+		title: "SSC CHSL final result (context)",
+		date: "2026-10-07",
+		status: "Declared",
+		summary: "CHSL final merit for the previous cycle was declared 7 Oct 2026 on ssc.gov.in. Not a CGL result."
+	},
+	{
+		id: "cgl-key",
+		kind: "key",
+		exam: "ssc-cgl",
+		title: "SSC CGL Tier-1 answer key 2026",
+		date: "2026-11-01",
+		status: "Pending",
+		summary: "Provisional key plus response sheet usually follows the exam window, then an objection window."
+	},
+	{
+		id: "ibps-key",
+		kind: "key",
+		exam: "bank-clerk",
+		title: "IBPS Clerk prelims response / key",
+		date: "2026-10-20",
+		status: "Pending",
+		summary: "Watch ibps.in a few days after 11 Oct. Challenge rules, if any, are on the notice."
+	},
+	{
+		id: "steno-key",
+		kind: "key",
+		exam: "ssc-cgl",
+		title: "SSC Stenographer answer key 2026",
+		date: "2026-09-26",
+		status: "Released",
+		summary: "Response sheet was out in late September. Listed so you can see how SSC keys land."
+	}
+];
+var kindLabel = {
+	job: "Jobs",
+	admit: "Admit cards",
+	result: "Results",
+	key: "Answer keys"
+};
+var examLabel = {
+	"ssc-cgl": "SSC CGL",
+	"bank-clerk": "Bank Clerk"
+};
+function filterUpdates(input) {
+	const q = (input.q ?? "").trim().toLowerCase();
+	return updates.filter((item) => {
+		if (input.kind && input.kind !== "all" && item.kind !== input.kind) return false;
+		if (input.exam && input.exam !== "all" && item.exam !== input.exam) return false;
+		if (!q) return true;
+		return `${item.title} ${item.summary} ${item.status} ${examLabel[item.exam]} ${kindLabel[item.kind]}`.toLowerCase().includes(q);
+	});
+}
+//#endregion
+export { updates as i, filterUpdates as n, kindLabel as r, examLabel as t };
